@@ -51,9 +51,9 @@ let animate = (ctx,images,animation,callback) =>{
     
     images[animation].forEach((image,index)=>{
         setTimeout(()=>{
-            ctx.clearRect(0,0,1400,500);
+            ctx.clearRect(0,0,1300,400);
             
-            ctx.drawImage(image,100,10,500,500);
+            ctx.drawImage(image,100,10,400,400);
         },index * 100);
         });
         setTimeout(callback,images[animation].length*100);
